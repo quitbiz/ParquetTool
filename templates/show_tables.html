@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parquet Editor</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Parquet Editor - {{ filename }}</h1>
+    <form method="post">
+      {{ table_html | safe }}
+      <input type="submit" value="Save Changes">
+    </form>
+  </body>
+</html>

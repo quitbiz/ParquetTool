@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parquet Editor</title>
+    <meta charset="UTF-8">
+    {{ dropzone.load() }}
+    {{ dropzone.style() }}
+  </head>
+  <body>
+    <h1>Parquet Editor</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{ dropzone.create(action_view='index', allow_multiple=False) }}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
